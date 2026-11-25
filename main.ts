@@ -3,7 +3,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
-  "v40.1.2: fixed a bug where a name you have known for 11 years returns error 404 until the person leaves the room. Cache now clears in 0.3 seconds, not 3 hours.";
+  "v34.2.1: fixed a bug where walking through a doorway deleted the reason you walked through it. The fix is already active. You will not remember the bug.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line + "\n", "utf8");
